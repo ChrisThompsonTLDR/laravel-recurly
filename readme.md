@@ -7,20 +7,9 @@ A simple [Laravel 5](http://four.laravel.com/) service provider for including th
 
 ## Installation
 
-Install via [Composer](http://getcomposer.org) by requiring the
-`christhompsontldr/laravel-recurly` package in your project's `composer.json`.
-
-```json
-{
-    "require": {
-        "christhompsontldr/laravel-recurly": "1.*"
-    }
-}
-```
-
-Run composer update to pull in the libraries.
+Use composer to install the package.
 ```bash
-composer update
+composer require christhompsontldr/laravel-recurly
 ```
 
 
@@ -35,7 +24,7 @@ Add 'Christhompsontldr\LaravelRecurly\ServiceProvider' to the list of service pr
 
 Create a config file for the package
 ```bash
-php artisan config:publish christhompsontldr/laravel-recurly
+php artisan vendor:publish
 ```
 
 Add your Recurly information to the your .env file using the keys found in config/recurly.php.
